@@ -76,7 +76,7 @@ public class OrderService {
         if (orders != null) {
             for (Order order : orders) {
                 if (AccountAndInformationService.accountID.equals(order.getAccountId())) {
-                    System.out.println("Order ID: " + order.getId());
+                    System.out.println("\nOrder ID: " + order.getId());
                     System.out.println("Status: " + order.getStatus());
                     System.out.println("Total cost: $" + order.getTotalMoney());
                     if (order.getProducts() != null) {
@@ -89,7 +89,7 @@ public class OrderService {
                 }
             }
         } else {
-            System.out.println("You have no order yet. Maybe you can buy something from our store\n");
+            System.out.println("You have no order yet.\n");
         }
     }
 
